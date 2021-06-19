@@ -1,18 +1,18 @@
-<h2 class="page-header">Search Books</h2>
+<h2 class="page-header">Search Topics</h2>
 <form action="/books" method="GET">
   <div class="form-row">
     <div class="form-item">
-      <label>Title</label>
+      <label>Topic</label>
       <input type="text" name="title" value="<%=searchOptions.title%>">
     </div>
   </div>
   <div class="form-row">
     <div class="form-item">
-      <label>Published After</label>
+      <label>Due After</label>
       <input type="date" name="publishedAfter" value="<%=searchOptions.publishedAfter%>">
     </div>
     <div class="form-item">
-      <label>Published Before</label>
+      <label>Due Before</label>
       <input type="date" name="publishedBefore" value="<%=searchOptions.publishedBefore%>">
     </div>
   </div>
@@ -22,10 +22,4 @@
   </div>
 </form>
 
-<div>
-  <% books.forEach(book =>{ %>
-    <a href="/books/<%= book.id%>">
-      <img height="150" width="100" src="<%=book.coverImagePath%>">
-    </a>
-  <% }) %>
-</div>
+<%- include('../partials/bookGrid',{ books: books, large:true })%>
