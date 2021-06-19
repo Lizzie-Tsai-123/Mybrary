@@ -76,3 +76,14 @@
   color: var(--color-text-light);
   font-size: inherit;
 }
+.link{
+  color: #3ec16a;
+  font-size: inherit;
+  text-decoration: none;
+  transition: 0.3s
+}
+.link:hover{
+  color: #3ec16a;
+  font-size: 30px;
+  text-decoration: none;
+}

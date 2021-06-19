@@ -30,6 +30,31 @@
   </div>
 
   <div class="form-row">
+    <div class="form-item">
+      <div style="line-height: 50px">First Link:</div>
+      <div style="line-height: 50px">Second Link:</div>
+    </div>
+    <div class="form-item">
+      <a class="link" href="<%=book.link1%>" style="line-height: 50px"><%=book.linkDes1%></a>
+      <a class="link" href="<%=book.link2%>" style="line-height: 50px"><%=book.linkDes2%></a>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-item">
+      <div>Review Game</div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-item">
+      <%-book.game%>
+    </div>
+  </div>
+
+
+
+
+  <div class="form-row">
     <div class="book-details-btn-grid">
       <a class="btn btn-primary" href="/books/<%=book.id%>/edit">Edit</a>
       <%- include('../partials/deleteForm', {url: `/books/${book.id}`})%>

@@ -34,6 +34,26 @@ const bookSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     required: true,
     ref: 'Author'
+  },
+  link1:{
+    type: String,
+    required: false
+  },
+  linkDes1:{
+    type: String,
+    required: false
+  },
+  link2:{
+    type: String,
+    required: false
+  },
+  linkDes2:{
+    type: String,
+    required: false
+  },
+  game:{
+    type: String,
+    required: false
   }
 })
 

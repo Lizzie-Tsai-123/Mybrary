@@ -40,7 +40,12 @@ router.post('/', async (req, res)=>{
     author: req.body.author,
     publishDate: new Date(req.body.publishDate),
     pageCount: req.body.pageCount,
-    description: req.body.description
+    description: req.body.description,
+    link1: req.body.link1,
+    link2: req.body.link2,
+    linkDes1: req.body.linkDes1,
+    linkDes2: req.body.linkDes2,
+    game: req.body.game
   })
   saveCover(book, req.body.cover)
 
@@ -85,6 +90,11 @@ router.put('/:id', async (req, res)=>{
     book.publishDate = new Date(req.body.publishDate)
     book.pageCount = req.body.pageCount
     book.description = req.body.description
+    book.link1 = req.body.link1
+    book.link2 = req.body.link2
+    book.game = req.body.game
+    book.linkDes1 = req.body.linkDes1
+    book.linkDes2 = req.body.linkDes2
     if( req.body.cover != null && req.body.cover !==''){
       saveCover(book, req.body.cover)
     }
