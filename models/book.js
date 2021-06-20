@@ -14,7 +14,7 @@ const bookSchema = new mongoose.Schema({
     required: true,
   },
   pageCount:{
-    type: Number,
+    type: String,
     required: true
   },
   createdAt:{

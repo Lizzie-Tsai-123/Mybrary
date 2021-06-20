@@ -80,10 +80,10 @@
   color: #3ec16a;
   font-size: inherit;
   text-decoration: none;
-  transition: 0.3s
+  transition: 0.1s;
 }
 .link:hover{
   color: #3ec16a;
-  font-size: 30px;
+  font-size: 22px;
   text-decoration: none;
 }
