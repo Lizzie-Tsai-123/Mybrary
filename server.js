@@ -17,6 +17,8 @@ const authorRouter = require('./routes/author')
 const bookRouter = require('./routes/books')
 const gameRouter = require('./routes/games')
 const moRouter = require('./routes/mo')
+const flowRouter = require('./routes/flowchart')
+
 
 app.set('view engine', 'ejs');
 app.set('views',__dirname+'/views');
@@ -42,6 +44,7 @@ app.use('/authors', authorRouter);
 app.use('/books', bookRouter);
 app.use('/games', gameRouter);
 app.use('/mo', moRouter);
+app.use('/flow', flowRouter);
 
 
 app.listen(process.env.PORT || 3000);

@@ -23,4 +23,14 @@ router.get('/childhood',(req, res)=>{
   res.render('games/games/childhood')
 })
 
+router.get('/xin1',(req, res)=>{
+
+  res.render('games/games/xin1')
+})
+
+router.get('/xin2',(req, res)=>{
+
+  res.render('games/games/xin2')
+})
+
 module.exports = router;//export the router
